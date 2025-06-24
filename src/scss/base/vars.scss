@@ -1,0 +1,25 @@
+:root {
+  // colors
+  --c-bg: #f5f3ef;
+  --c-primary: #000000;
+  --c-accent: #332e20;
+  --c-white: #ffffff;
+
+  // properties
+  --p-radius: 1rem;
+  --p-shadow: rgba(149, 157, 165, 0.3) 0 0.8rem 2.4rem;
+
+  // font family
+  --ff-main: 'Raleway';
+
+  // icons
+
+  // typography
+  --txt-main: 400 1.6rem / 120% var(--ff-main);
+
+  @media (max-width: 49em) {
+    --p-radius: 2rem;
+
+    --txt-main: 400 3rem / 130% var(--ff-main);
+  }
+}

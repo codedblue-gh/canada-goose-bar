@@ -1,0 +1,68 @@
+.contact {
+  // .contact__container
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .contact__heading
+
+  &__heading {
+    margin-bottom: 4rem;
+    @media (max-width: 49em) {
+      margin-bottom: 6rem;
+    }
+  }
+
+  // .contact__text
+
+  &__text {
+    max-width: 77rem;
+    margin-bottom: 6rem;
+    @media (max-width: 49em) {
+      margin-bottom: 10rem;
+    }
+  }
+
+  // .contact__form
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+    @media (max-width: 49em) {
+      row-gap: 6rem;
+    }
+  }
+
+  // .contact__fields
+
+  &__fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 3.5rem;
+    @media (max-width: 49em) {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5rem;
+    }
+  }
+
+  // .contact__field
+
+  &__field {
+    &:last-child {
+      @media (min-width: 49.01em) {
+        grid-column: span 2;
+      }
+    }
+  }
+
+  // .contact__btn
+
+  &__btn {
+    margin-right: auto;
+  }
+}

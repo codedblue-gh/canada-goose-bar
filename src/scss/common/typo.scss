@@ -1,0 +1,46 @@
+.heading {
+  max-width: 107rem;
+
+  font-size: 5rem;
+  line-height: 110%;
+
+  @media (max-width: 49em) {
+    max-width: 75rem;
+    font-size: 6rem;
+  }
+
+  &_s {
+    font-size: 2rem;
+
+    @media (max-width: 49em) {
+      font-size: 3rem;
+    }
+  }
+
+  &_m {
+    font-size: 2.5rem;
+
+    @media (max-width: 49em) {
+      font-size: 3.2rem;
+    }
+  }
+
+  &_l {
+    font-size: 4rem;
+
+    @media (max-width: 49em) {
+      font-size: 5rem;
+    }
+  }
+}
+
+.subtitle {
+  font: var(--txt-main);
+  font-weight: 500;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.txt {
+  font: var(--txt-main);
+}

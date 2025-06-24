@@ -1,0 +1,54 @@
+// vars
+
+@import 'base/vars';
+
+// ------------------------------- base styles ------------------------------
+
+// base scss
+@import 'base/set';
+@import 'base/header';
+@import 'base/footer';
+
+// common scss
+@import 'common/typo';
+@import 'common/layout';
+@import 'common/btn';
+@import 'common/form';
+
+.wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+
+  main {
+    padding-top: 7rem;
+
+    flex: 1 1 auto;
+
+    @media (max-width: 49em) {
+      padding-top: 12rem;
+    }
+  }
+}
+
+._show-menu {
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
+
+// --------------------------------------------------------------------------
+
+// sections
+@import 'sections/hero';
+@import 'sections/about';
+@import 'sections/articles';
+@import 'sections/contact';
+@import 'sections/blog';
+@import 'sections/article';
+@import 'sections/other';

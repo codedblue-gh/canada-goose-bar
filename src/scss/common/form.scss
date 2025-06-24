@@ -1,0 +1,47 @@
+.field {
+  position: relative;
+
+  &__input {
+    padding: 0 2rem;
+    border: 1px solid var(--c-accent);
+    width: 100%;
+    transition: border 0.4s ease-in-out;
+    height: 5rem;
+    &:focus {
+      border: 1px solid var(--c-accent);
+    }
+    @media (max-width: 49em) {
+      height: 9rem;
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        border: 1px solid var(--c-accent);
+      }
+    }
+  }
+
+  &__label {
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    padding: 0 1rem;
+    background-color: var(--c-bg);
+
+    transform: translateY(-50%);
+  }
+
+  .input_textarea {
+    padding-top: 2rem;
+    height: 16rem;
+    resize: none;
+
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox, Safari 18.2+, Chromium 121+ */
+    &::-webkit-scrollbar {
+      display: none; /* Older Safari and Chromium */
+    }
+    @media (max-width: 49em) {
+      height: 24rem;
+    }
+  }
+}

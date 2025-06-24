@@ -1,0 +1,42 @@
+.other {
+  // .other__container
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8rem;
+
+    @media (max-width: 49em) {
+      row-gap: 10rem;
+    }
+  }
+
+  // .other__heading
+
+  &__heading {
+  }
+
+  // .other__list
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    @media (max-width: 49em) {
+      display: flex;
+      flex-direction: column;
+      row-gap: 6rem;
+    }
+  }
+
+  // .other__item
+
+  &__item {
+  }
+
+  // .other__btn
+
+  &__btn {
+    margin: 0 auto;
+  }
+}
